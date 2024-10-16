@@ -1,0 +1,181 @@
+/* Base Styles */
+body {
+    font-family: "Cormorant Garamond", serif;
+    background-color: #fff;
+    color: #051c2c;;
+    padding-top: 60px; /* Adjust based on your header height */
+}
+
+/* Container for the Property Management Page */
+.container {
+    padding: 2em;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    max-width: 1200px;
+    color: #051c2c;
+    border-radius: 3px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+}
+
+.mirror-silver-background {
+    background: linear-gradient(135deg, #f2f2f2, #d9d9d9, #e6e6e6, #bfbfbf, #f2f2f2);
+    color: #333; /* Text color for contrast */
+    padding: 1em;
+    background-size: 400% 400%; /* Enhance gradient movement */
+    animation: shiny-effect 5s ease-in-out infinite;
+}
+
+/* Animation to create a moving shine effect */
+@keyframes shiny-effect {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    color: #051c2c;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    max-width: 800px; /* Limiting the form width */
+    margin: 0 auto; /* Centering the form */
+}
+
+fieldset {
+    border: none;
+    padding: 1.5em;
+    margin-bottom: 0.5em;
+    background-color: transparent;
+}
+
+legend {
+    font-weight: bold;
+    color: #051c2c;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+/* Form Field Styles */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #051c2c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #051c2c; 
+    border-radius: 5px; /* Rounded corners for fields */
+    box-sizing: border-box; /* Ensures padding is included in the total width/height */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.form-group input[type="file"] {
+    border: 1px solid #051c2c; /* Border for file inputs */
+    border-radius: 5px; /* Rounded corners for file inputs */
+    padding: 0.75em; /* Padding for better appearance */
+}
+
+/* Hover and Focus States */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #051c2c; /* Dark blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+button.btn-primary {
+    background-color: #051c2c;
+    color: white;
+    border: 3px solid transparent; /* Start with a transparent border */
+    padding: 0.75em 1.5em;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Added border transition */
+}
+
+/* Hover state with animated border */
+button.btn-primary:hover {
+    background-color: white;
+    border: 3px solid #051c2c; /* Border color changes on hover */
+    color: #051c2c;
+}
+
+/* Target <p> tags within the first fieldset */
+form fieldset:first-of-type p {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset:first-of-type p label {
+    margin-bottom: 0.5em;
+    color: #051c2c;
+    font-weight: bolder;
+}
+
+form fieldset:first-of-type p input,
+form fieldset:first-of-type p select,
+form fieldset:first-of-type p textarea {
+    width: 100%;
+    height: auto;
+    padding: 0.75em;
+    border: 1px solid #051c2c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+
+/* Alert Messages */
+
+.alert-container {
+    margin-bottom: 1em;
+}
+
+.alert {
+    padding: 1em;
+    border-radius: 0.25em;
+    margin-bottom: 1em;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1em;
+    }
+    
+    form {
+        padding: 1em;
+    }
+    
+    .form-group {
+        margin-bottom: 1em;
+    }
+}

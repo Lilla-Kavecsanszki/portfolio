@@ -1,0 +1,47 @@
+{% extends "account/base.html" %}
+{% load i18n crispy_forms_tags %}
+{% load account socialaccount %}
+{% load static %}
+
+<!-- Extra CSS -->
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/allauth.css' %}" />
+{% endblock %} 
+
+{% block head_title %}
+<!-- trans signup -->
+{% trans "Signup" %}{% endblock %} {% block inner_content %}
+
+<div class="container-fluid">
+<h2 class="logo-font title mb-4">{% trans "Sign Up" %}</h2>
+<hr />
+
+<p class="please">
+  {% blocktrans %}Already have an account? Then please
+  <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+</p>
+
+<div class="mb-5 outer-form">
+<form
+  class="signup mb-2"
+  id="signup_form"
+  method="post"
+  action="{% url 'account_signup' %}"
+>
+  {% csrf_token %} {{ form|crispy }} {% if redirect_field_value %}
+  <input
+    type="hidden"
+    name="{{ redirect_field_name }}"
+    value="{{ redirect_field_value }}"
+  />
+  {% endif %}
+  <div class="forgot-password-wrapper">
+  <a class="secondaryAction forgot-password" href="{% url 'account_login' %}"
+    >Back to Login</a
+  >
+</div>
+  <button class="primaryAction" type="submit">{% trans "Sign Up" %}</button>
+</form>
+</div>
+</div>
+{% endblock %}

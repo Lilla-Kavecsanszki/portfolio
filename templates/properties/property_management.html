@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+<!-- Extra CSS -->
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/property_management.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container mirror-silver-background">
+    <h1>{% trans "Property Management" %}</h1>
+
+    <!-- Display success or error messages -->
+    {% if messages %}
+        <div class="alert-container">
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset>
+            <legend>{% trans "Property Details" %}</legend>
+            {{ property_form.as_p }}
+            {% for field in property_form %}
+                {% if field.errors %}
+                    <div class="text-danger">
+                        {{ field.errors }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </fieldset>
+
+        <fieldset>
+            <legend>{% trans "Property Images" %}</legend>
+            {{ image_forms.management_form }}
+            {% for form in image_forms %}
+                <div class="form-group">
+                    {{ form.image.label_tag }}
+                    {{ form.image }}
+                    {% if form.errors %}
+                        <div class="text-danger">
+                            {{ form.errors }}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </fieldset>
+
+        <fieldset>
+            <legend>{% trans "Property Videos" %}</legend>
+            {{ video_forms.management_form }}
+            {% for form in video_forms %}
+                <div class="form-group">
+                    {{ form.video.label_tag }}
+                    {{ form.video }}
+                    {% if form.errors %}
+                        <div class="text-danger">
+                            {{ form.errors }}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">{% trans "Save Property" %}</button>
+    </form>
+</div>
+{% endblock %}

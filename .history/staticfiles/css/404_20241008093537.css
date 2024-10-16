@@ -1,0 +1,69 @@
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Container */
+.header-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #182d5f;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Error message styling */
+.error-page {
+    color: #333;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 1.2;
+}
+
+/* Button styles */
+.btn-back {
+    background-color: #182d5f;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #ffffff;
+    color: #182d5f;
+    border: solid 3px #182d5f
+    text-decoration: none;
+}
+
+/* Responsive design for mobile screens */
+@media only screen and (max-width: 768px) {
+    .error-page {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .btn-back {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Additional spacing for elements */
+.my-5 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

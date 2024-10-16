@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /contact/
+Disallow: /profiles/
+Sitemap: https://residenza127-cdaf6f72e867.herokuapp.com/sitemap.xml

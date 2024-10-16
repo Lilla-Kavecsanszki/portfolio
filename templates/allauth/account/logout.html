@@ -1,0 +1,32 @@
+{% extends "account/base.html" %}
+{% load i18n crispy_forms_tags %}
+{% load account socialaccount %}
+{% load static %}
+
+<!-- Extra CSS -->
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/allauth.css' %}" />
+{% endblock %}
+
+{% block head_title %}
+{% trans "Sign Out" %}{% endblock %}
+
+{% block inner_content %}
+<div class="container-fluid">
+    <div class="row form justify-content-center">
+            <div class="logouter-form">
+                <h2 class="logo-font signout mt-5 mb-5 text-center">{% trans "Sign Out" %}</h2>
+                <hr class="mt-3 mb-4" style="border: 1px solid white;" />
+                <p class="text-center mb-4">{% trans 'Are you sure you want to sign out?' %}</p>
+                <form class="logout-form text-center" method="post" action="{% url 'account_logout' %}">
+                    {% csrf_token %}
+                    {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    {% endif %}
+                    <a class="btn home-button mx-2" href="{% url 'home' %}">{% trans "Home" %}</a>
+                    <button type="submit" class="primaryAction mx-2">{% trans 'Logout' %}</button>
+                </form>
+            </div>
+        </div>
+</div>
+{% endblock %}

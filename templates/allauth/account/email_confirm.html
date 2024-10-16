@@ -1,0 +1,44 @@
+{% extends "account/base.html" %}
+{% load i18n crispy_forms_tags %}
+{% load account socialaccount %}
+{% load static %}
+
+<!-- Extra CSS -->
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/allauth.css' %}" />
+{% endblock %}
+
+{% block head_title %}{% trans "Confirm E-mail Address" %}{% endblock %}
+<!-- block inner content -->
+{% block inner_content %}
+    <div class="row container-fluid">
+      <div class="row verify-form justify-content-center">
+<h2 class="logo-font mt-2 mb-4">{% trans "Confirm E-mail Address" %}</h2>
+<hr />
+
+{% if confirmation %}
+<!-- user display -->
+{% user_display confirmation.email_address.user as user_display %}
+
+<p>
+  {% blocktrans with confirmation.email_address.email as email %}Please confirm
+  that <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for
+  user {{ user_display }}.{% endblocktrans %}
+</p>
+
+<form class="account_pages" method="post" action="{% url 'account_confirm_email' confirmation.key %}">
+  {% csrf_token %}
+  <button class="btn home-button" type="submit">{% trans 'Confirm' %}</button>
+</form>
+
+{% else %} {% url 'account_email' as email_url %}
+
+<p class="mb-5">
+  {% blocktrans %}This e-mail confirmation link expired or is invalid. Please
+  <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.
+  <!-- endblocktrans -->
+  {% endblocktrans %}
+</p>
+</div>
+</div>
+{% endif %} {% endblock %}

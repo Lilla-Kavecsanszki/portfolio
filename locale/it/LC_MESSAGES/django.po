@@ -1,0 +1,2281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-07 18:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: properties/widgets.py:5 templates/allauth/account/email.html:43
+#: templates/allauth/socialaccount/connections.html:35
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: properties/widgets.py:6
+msgid "Current Image"
+msgstr "Immagine Corrente"
+
+#: properties/widgets.py:7
+msgid "Browse"
+msgstr "Sfoglia"
+
+#: residenza127/settings.py:150
+msgid "English"
+msgstr "Inglese"
+
+#: residenza127/settings.py:151
+msgid "Italian"
+msgstr "Italiano"
+
+#: templates/allauth/account/account_inactive.html:4
+msgid "Account Inactive"
+msgstr "Account Inattivo"
+
+#: templates/allauth/account/account_inactive.html:7
+msgid "This account is inactive."
+msgstr "Questo account è inattivo."
+
+#: templates/allauth/account/email.html:3 templates/base.html:70
+#: templates/base.html:127 templates/includes/mobile-top-header.html:11
+msgid "Account"
+msgstr "Account"
+
+#: templates/allauth/account/email.html:5
+msgid "E-mail Addresses"
+msgstr "Indirizzi E-mail"
+
+#: templates/allauth/account/email.html:9
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "I seguenti indirizzi e-mail sono associati al tuo account:"
+
+#: templates/allauth/account/email.html:25
+msgid "Verified"
+msgstr "Verificato"
+
+#: templates/allauth/account/email.html:27
+msgid "Unverified"
+msgstr "Non Verificato"
+
+#: templates/allauth/account/email.html:29
+msgid "Primary"
+msgstr "Primario"
+
+#: templates/allauth/account/email.html:37
+msgid "Make Primary"
+msgstr "Rendi Primario"
+
+#: templates/allauth/account/email.html:40
+msgid "Re-send Verification"
+msgstr "Invia Nuovamente la Verifica"
+
+#: templates/allauth/account/email.html:51
+msgid "Warning:"
+msgstr "Attenzione:"
+
+#: templates/allauth/account/email.html:58
+msgid "Add E-mail Address"
+msgstr "Aggiungi Indirizzo E-mail"
+
+#: templates/allauth/account/email.html:62
+msgid "Add E-mail"
+msgstr "Aggiungi E-mail"
+
+#: templates/allauth/account/email.html:69
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "Vuoi davvero rimuovere l'indirizzo e-mail selezionato?"
+
+#: templates/allauth/account/email/email_confirmation_message.txt:1
+#, python-format
+msgid ""
+"Hello from %(site_name)s!\n"
+"\n"
+"You're receiving this e-mail because user %(user_display)s has given yours "
+"as an e-mail address to connect their account.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr ""
+"Ciao da %(site_name)s!\n"
+"\n"
+"Ricevi questa e-mail perché l'utente %(user_display)s ha fornito il tuo "
+"indirizzo e-mail per collegare il proprio account.\n"
+"\n"
+"Per confermare che sia corretto, vai su %(activate_url)s\n"
+
+#: templates/allauth/account/email/email_confirmation_message.txt:7
+#, python-format
+msgid ""
+"Thank you from %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+"Grazie da %(site_name)s!\n"
+"%(site_domain)s"
+
+#: templates/allauth/account/email/email_confirmation_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr "Per favore Conferma il Tuo Indirizzo E-mail"
+
+#: templates/allauth/account/email/password_reset_key_message.txt:1
+#, python-format
+msgid ""
+"Hello from %(site_name)s!\n"
+"\n"
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password."
+msgstr ""
+"Ciao da %(site_name)s!\n"
+"\n"
+"Ricevi questa e-mail perché tu o qualcun altro avete richiesto una "
+"password per il tuo account utente.\n"
+"Può essere ignorata in sicurezza se non hai richiesto un reset della password. "
+"Clicca il link sottostante per reimpostare la tua password."
+
+#: templates/allauth/account/email/password_reset_key_message.txt:8
+#, python-format
+msgid "In case you forgot, your username is %(username)s."
+msgstr "Nel caso tu abbia dimenticato, il tuo nome utente è %(username)s."
+
+#: templates/allauth/account/email/password_reset_key_message.txt:10
+#, python-format
+msgid ""
+"Thank you for using %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+"Grazie per utilizzare %(site_name)s!\n"
+"%(site_domain)s"
+
+#: templates/allauth/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr "E-mail di Reset Password"
+
+#: templates/allauth/account/email_confirm.html:3
+#: templates/allauth/account/email_confirm.html:7
+msgid "Confirm E-mail Address"
+msgstr "Conferma Indirizzo E-mail"
+
+#: templates/allauth/account/email_confirm.html:15
+#, python-format
+msgid ""
+"Please confirm\n"
+"  that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail address for\n"
+"  user %(user_display)s."
+msgstr ""
+"Per favore conferma\n"
+"  che <a href=\"mailto:%(email)s\">%(email)s</a> sia un indirizzo e-mail per\n"
+"  l'utente %(user_display)s."
+
+#: templates/allauth/account/email_confirm.html:22
+msgid "Confirm"
+msgstr "Conferma"
+
+#: templates/allauth/account/email_confirm.html:28
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please\n"
+"  <a href=\"%(email_url)s\">issue a new e-mail confirmation request</a>.\n"
+"  <!-- endblocktrans -->\n"
+"  "
+msgstr ""
+"Il link di conferma e-mail è scaduto o non è valido. Per favore\n"
+"  <a href=\"%(email_url)s\">richiedi una nuova conferma e-mail</a>.\n"
+"  <!-- endblocktrans -->\n"
+"  "
+
+#: templates/allauth/account/login.html:11
+#: templates/allauth/account/login.html:16
+#: templates/allauth/account/login.html:52 templates/allauth/base.html:29
+msgid "Sign In"
+msgstr "Accedi"
+
+#: templates/allauth/account/login.html:22
+#, python-format
+msgid ""
+"Please sign in with one of your\n"
+"              existing third-party accounts. Or, <a "
+"href=\"%(signup_url)s\">sign up</a> for\n"
+"              a %(site_name)s account and sign in below:"
+msgstr ""
+"Per favore accedi con uno dei tuoi\n"
+"              account di terze parti esistenti. Oppure, <a "
+"href=\"%(signup_url)s\">registrati</a> per\n"
+"              un account %(site_name)s e accedi qui sotto:"
+
+#: templates/allauth/account/login.html:32
+#: venv/lib/python3.12/site-packages/django/utils/text.py:286
+msgid "or"
+msgstr "oppure"
+
+#: templates/allauth/account/login.html:38
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"              <a class=\"signin\" href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"Se non hai ancora creato un account, per favore\n"
+"              <a class=\"signin\" href=\"%(signup_url)s\">registrati</a> prima."
+
+#: templates/allauth/account/login.html:55
+msgid "Forgot Password?"
+msgstr "Hai dimenticato la password?"
+
+#: templates/allauth/account/logout.html:12
+#: templates/allauth/account/logout.html:18 templates/allauth/base.html:27
+msgid "Sign Out"
+msgstr "Esci"
+
+#: templates/allauth/account/logout.html:20
+msgid "Are you sure you want to sign out?"
+msgstr "Sei sicuro di voler uscire?"
+
+#: templates/allauth/account/logout.html:26 templates/base.html:206
+#: templates/base.html:223
+msgid "Home"
+msgstr "Home"
+
+#: templates/allauth/account/logout.html:27 templates/base.html:85
+#: templates/base.html:140 templates/includes/mobile-top-header.html:24
+msgid "Logout"
+msgstr "Disconnetti"
+
+#: templates/allauth/account/messages/cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr "Non puoi rimuovere il tuo indirizzo e-mail primario (%(email)s)."
+
+#: templates/allauth/account/messages/email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr "E-mail di conferma inviata a %(email)s."
+
+#: templates/allauth/account/messages/email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr "Hai confermato %(email)s."
+
+#: templates/allauth/account/messages/email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr "Indirizzo e-mail %(email)s rimosso."
+
+#: templates/allauth/account/messages/logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr "Accesso effettuato con successo come %(name)s."
+
+#: templates/allauth/account/messages/logged_out.txt:2
+msgid "You have signed out."
+msgstr "Sei uscito."
+
+#: templates/allauth/account/messages/password_changed.txt:2
+msgid "Password successfully changed."
+msgstr "Password cambiata con successo."
+
+#: templates/allauth/account/messages/password_set.txt:2
+msgid "Password successfully set."
+msgstr "Password impostata con successo."
+
+#: templates/allauth/account/messages/primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr "Indirizzo e-mail primario impostato."
+
+#: templates/allauth/account/messages/unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
+msgstr "Il tuo indirizzo e-mail primario deve essere verificato."
+
+#: templates/allauth/account/password_change.html:3
+#: templates/allauth/account/password_change.html:5
+#: templates/allauth/account/password_change.html:17
+#: templates/allauth/account/password_reset_from_key.html:3
+#: templates/allauth/account/password_reset_from_key.html:8
+#: templates/allauth/account/password_reset_from_key_done.html:3
+#: templates/allauth/account/password_reset_from_key_done.html:5
+msgid "Change Password"
+msgstr "Cambia Password"
+
+#: templates/allauth/account/password_reset.html:3
+#: templates/allauth/account/password_reset.html:8
+#: templates/allauth/account/password_reset_done.html:3
+#: templates/allauth/account/password_reset_done.html:7
+msgid "Password Reset"
+msgstr "Reimpostazione Password"
+
+#: templates/allauth/account/password_reset.html:15
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+" Hai dimenticato la tua password? Inserisci il tuo indirizzo e-mail qui sotto, e ti "
+" invieremo un'e-mail che ti permetterà di reimpostarla."
+
+#: templates/allauth/account/password_reset.html:27
+msgid "Reset My Password"
+msgstr "Reimposta la Mia Password"
+
+#: templates/allauth/account/password_reset.html:31
+msgid ""
+"Please contact us if you have any trouble resetting your\n"
+"  password."
+msgstr ""
+"Per favore contattaci se hai problemi a reimpostare la tua\n"
+"  password."
+
+#: templates/allauth/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not\n"
+"  receive it within a few minutes."
+msgstr ""
+"Ti abbiamo inviato un'e-mail. Per favore contattaci se non\n"
+"  la ricevi entro pochi minuti."
+
+#: templates/allauth/account/password_reset_from_key.html:6
+msgid "Bad Token"
+msgstr "Token Non Valido"
+
+#: templates/allauth/account/password_reset_from_key.html:14
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has\n"
+"  already been used. Please request a\n"
+"  <a href=\"%(passwd_reset_url)s\">new password reset</a>."
+msgstr ""
+"Il link per la reimpostazione della password non è valido, probabilmente perché è\n"
+"  già stato utilizzato. Per favore richiedi una\n"
+"  <a href=\"%(passwd_reset_url)s\">nuova reimpostazione password</a>."
+
+#: templates/allauth/account/password_reset_from_key.html:24
+msgid "change password"
+msgstr "cambia password"
+
+#: templates/allauth/account/password_reset_from_key.html:27
+#: templates/allauth/account/password_reset_from_key_done.html:7
+msgid "Your password is now changed."
+msgstr "La tua password è ora cambiata."
+
+#: templates/allauth/account/password_set.html:3
+#: templates/allauth/account/password_set.html:5
+#: templates/allauth/account/password_set.html:14
+msgid "Set Password"
+msgstr "Imposta Password"
+
+#: templates/allauth/account/signup.html:13
+#: templates/allauth/socialaccount/signup.html:5
+msgid "Signup"
+msgstr "Registrazione"
+
+#: templates/allauth/account/signup.html:16
+#: templates/allauth/account/signup.html:43 templates/allauth/base.html:30
+#: templates/allauth/socialaccount/signup.html:8
+#: templates/allauth/socialaccount/signup.html:19
+msgid "Sign Up"
+msgstr "Registrati"
+
+#: templates/allauth/account/signup.html:20
+#, python-format
+msgid ""
+"Already have an account? Then please\n"
+"  <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+"Hai già un account? Allora per favore\n"
+"  <a href=\"%(login_url)s\">accedi</a>."
+
+#: templates/allauth/account/signup_closed.html:3
+#: templates/allauth/account/signup_closed.html:5
+msgid "Sign Up Closed"
+msgstr "Registrazione Chiusa"
+
+#: templates/allauth/account/signup_closed.html:8
+msgid "We are sorry, but the sign up is currently closed."
+msgstr "Ci dispiace, ma la registrazione è attualmente chiusa."
+
+#: templates/allauth/account/snippets/already_logged_in.html:5
+msgid "Note"
+msgstr "Nota"
+
+#: templates/allauth/account/snippets/already_logged_in.html:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr "sei già loggato come %(user_display)s."
+
+#: templates/allauth/account/verification_sent.html:13
+#: templates/allauth/account/verification_sent.html:15
+#: templates/allauth/account/verified_email_required.html:3
+#: templates/allauth/account/verified_email_required.html:5
+msgid "Verify Your E-mail Address"
+msgstr "Verifica il Tuo Indirizzo E-mail"
+
+#: templates/allauth/account/verification_sent.html:19
+msgid ""
+"We have sent an e-mail to you for verification. Follow the\n"
+"  link provided to finalize the signup process. Please contact us if you do "
+"not\n"
+"  receive it within a few minutes."
+msgstr ""
+"Ti abbiamo inviato un'e-mail per la verifica. Segui il\n"
+"  link fornito per completare il processo di registrazione. Per favore contattaci se non\n"
+"  la ricevi entro pochi minuti."
+
+#: templates/allauth/account/verified_email_required.html:11
+msgid ""
+"This part of the site requires us to verify that you are who\n"
+"  you claim to be. For this purpose, we require that you verify ownership "
+"of\n"
+"  your e-mail address. "
+msgstr ""
+"Questa parte del sito richiede che verifichiamo la tua identità. Per questo motivo, "
+"è necessario verificare la proprietà del tuo indirizzo e-mail."
+
+#: templates/allauth/account/verified_email_required.html:17
+msgid ""
+"We have sent an e-mail to you for verification. Please click\n"
+"  on the link inside this e-mail. Please contact us if you do not receive "
+"it\n"
+"  within a few minutes."
+msgstr ""
+"Ti abbiamo inviato un'e-mail per la verifica. Per favore clicca\n"
+"  sul link all'interno di questa e-mail. Per favore contattaci se non ricevi\n"
+"  l'e-mail entro pochi minuti."
+
+#: templates/allauth/account/verified_email_required.html:23
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still\n"
+"  <a href=\"%(email_url)s\">change your e-mail address</a>."
+msgstr ""
+"<strong>Nota:</strong> puoi ancora\n"
+"  <a href=\"%(email_url)s\">cambiare il tuo indirizzo e-mail</a>."
+
+#: templates/allauth/base.html:13
+msgid "Messages:"
+msgstr "Messaggi:"
+
+#: templates/allauth/base.html:23
+msgid "Menu:"
+msgstr "Menu:"
+
+#: templates/allauth/base.html:26
+msgid "Change E-mail"
+msgstr "Cambia E-mail"
+
+#: templates/allauth/socialaccount/authentication_error.html:5
+#: templates/allauth/socialaccount/authentication_error.html:8
+msgid "Social Network Login Failure"
+msgstr "Errore di Accesso con il Social Network"
+
+#: templates/allauth/socialaccount/authentication_error.html:10
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr ""
+"Si è verificato un errore durante il tentativo di accesso tramite il tuo account "
+"social network."
+
+#: templates/allauth/socialaccount/connections.html:5
+#: templates/allauth/socialaccount/connections.html:8
+msgid "Account Connections"
+msgstr "Connessioni Account"
+
+#: templates/allauth/socialaccount/connections.html:11
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr ""
+"Puoi accedere al tuo account utilizzando uno dei seguenti account di terze parti:"
+
+#: templates/allauth/socialaccount/connections.html:43
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr ""
+"Attualmente non hai alcun account di social network collegato a questo account."
+
+#: templates/allauth/socialaccount/connections.html:46
+msgid "Add a 3rd Party Account"
+msgstr "Aggiungi un Account di Terze Parti"
+
+#: templates/allauth/socialaccount/login_cancelled.html:5
+#: templates/allauth/socialaccount/login_cancelled.html:9
+msgid "Login Cancelled"
+msgstr "Accesso Annullato"
+
+#: templates/allauth/socialaccount/login_cancelled.html:13
+#, python-format
+msgid ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a "
+"href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+"Hai deciso di annullare l'accesso al nostro sito utilizzando uno dei tuoi "
+"account esistenti. Se è stato un errore, per favore procedi a <a "
+"href=\"%(login_url)s\">accedere</a>."
+
+#: templates/allauth/socialaccount/messages/account_connected.txt:2
+msgid "The social account has been connected."
+msgstr "L'account social è stato collegato."
+
+#: templates/allauth/socialaccount/messages/account_connected_other.txt:2
+msgid "The social account is already connected to a different account."
+msgstr "L'account social è già collegato a un altro account."
+
+#: templates/allauth/socialaccount/messages/account_disconnected.txt:2
+msgid "The social account has been disconnected."
+msgstr "L'account social è stato scollegato."
+
+#: templates/allauth/socialaccount/signup.html:10
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"Stai per utilizzare il tuo account %(provider_name)s per accedere a\n"
+"%(site_name)s. Come ultimo passaggio, per favore completa il modulo seguente:"
+
+#: templates/base.html:8 templates/index.html:20
+msgid "Building Oristano"
+msgstr "Edificio Oristano"
+
+#: templates/base.html:42
+msgid "Logo"
+msgstr "Logo"
+
+#: templates/base.html:50 templates/includes/mobile-top-header.html:43
+#: templates/properties/properties.html:22
+msgid "Search by Name"
+msgstr "Cerca per Nome"
+
+#: templates/base.html:79 templates/base.html:134
+#: templates/includes/mobile-top-header.html:18
+#: templates/properties/property_management.html:11
+msgid "Property Management"
+msgstr "Gestione Immobili"
+
+#: templates/base.html:82 templates/base.html:137
+#: templates/includes/mobile-top-header.html:21
+#: templates/profiles/user_profile.html:47
+msgid "My Favourites"
+msgstr "I Miei Preferiti"
+
+#: templates/base.html:87 templates/base.html:142
+#: templates/includes/mobile-top-header.html:26
+msgid "Register"
+msgstr "Registrati"
+
+#: templates/base.html:88 templates/base.html:143
+#: templates/includes/mobile-top-header.html:27
+msgid "Login"
+msgstr "Accedi"
+
+#: templates/base.html:101 templates/base.html:105 templates/base.html:177
+#: templates/base.html:181
+msgid "EN"
+msgstr "EN"
+
+#: templates/base.html:106 templates/base.html:182
+msgid "IT"
+msgstr "IT"
+
+#: templates/base.html:153 templates/includes/mobile-top-header.html:37
+msgid "Search"
+msgstr "Cerca"
+
+#: templates/base.html:159
+msgid "Search our site"
+msgstr "Cerca nel nostro sito"
+
+#: templates/base.html:192
+msgid "Toggle navigation"
+msgstr "Attiva/Disattiva navigazione"
+
+#: templates/base.html:201
+msgid "Admin"
+msgstr "Admin"
+
+#: templates/base.html:209 templates/base.html:226
+#: templates/properties/properties.html:11
+#: templates/properties/properties.html:69
+msgid "Properties"
+msgstr "Proprietà"
+
+#: templates/base.html:212 templates/base.html:229
+msgid "Construction"
+msgstr "Costruzione"
+
+#: templates/base.html:215 templates/base.html:232
+msgid "About"
+msgstr "Chi Siamo"
+
+#: templates/base.html:218 templates/base.html:235
+msgid "Contact"
+msgstr "Contatti"
+
+#: templates/base.html:266
+msgid "Follow us on social media:"
+msgstr "Seguici sui social media:"
+
+#: templates/base.html:272
+msgid "Building Sardinia. All rights reserved."
+msgstr "Building Sardinia. Tutti i diritti riservati."
+
+#: templates/construction/construction.html:6
+msgid "Construction Projects - Building Oristano"
+msgstr "Progetti di Costruzione - Edificio Oristano"
+
+#: templates/construction/construction.html:16
+msgid "Upcoming Projects"
+msgstr "Progetti Futuri"
+
+#: templates/construction/construction.html:22
+msgid "Upcoming Building 1"
+msgstr "Prossimo Edificio 1"
+
+#: templates/construction/construction.html:23
+msgid "Skyline Tower"
+msgstr "Skyline Tower"
+
+#: templates/construction/construction.html:24
+msgid ""
+"A luxurious skyscraper in the heart of the city, with completion expected by "
+"mid-2025."
+msgstr ""
+"Un lussuoso grattacielo nel cuore della città, con completamento previsto per "
+"metà 2025."
+
+#: templates/construction/construction.html:31
+msgid "Upcoming Building 2"
+msgstr "Prossimo Edificio 2"
+
+#: templates/construction/construction.html:32
+msgid "The Green Plaza"
+msgstr "The Green Plaza"
+
+#: templates/construction/construction.html:33
+msgid ""
+"An eco-friendly residential complex featuring modern amenities. Estimated "
+"launch: Early 2026."
+msgstr ""
+"Un complesso residenziale eco-sostenibile con servizi moderni. Lancio previsto: "
+"inizio 2026."
+
+#: templates/construction/construction.html:40
+msgid "Upcoming Building 3"
+msgstr "Prossimo Edificio 3"
+
+#: templates/construction/construction.html:41
+msgid "Oceanview Residences"
+msgstr "Oceanview Residences"
+
+#: templates/construction/construction.html:42
+msgid ""
+"Luxury apartments with stunning ocean views. Construction begins in late "
+"2024."
+msgstr ""
+"Appartamenti di lusso con splendide viste sull'oceano. La costruzione inizia "
+"nella seconda metà del 2024."
+
+#: templates/contact.html:12
+msgid "Contact Us"
+msgstr "Contattaci"
+
+#: templates/contact.html:17
+msgid "Please correct the errors below:"
+msgstr "Per favore correggi gli errori qui sotto:"
+
+#: templates/contact.html:46
+msgid "Name"
+msgstr "Nome"
+
+#: templates/contact.html:53 templates/profiles/user_profile.html:18
+msgid "Email"
+msgstr "Email"
+
+#: templates/contact.html:60
+msgid "Subject"
+msgstr "Oggetto"
+
+#: templates/contact.html:67
+msgid "Message"
+msgstr "Messaggio"
+
+#: templates/contact.html:73
+msgid "Send"
+msgstr "Invia"
+
+#: templates/contact.html:81
+msgid "Our Office"
+msgstr "Il Nostro Ufficio"
+
+#: templates/contact.html:82
+msgid "Address:"
+msgstr "Indirizzo:"
+
+#: templates/contact.html:83
+msgid "Telephone:"
+msgstr "Telefono:"
+
+#: templates/contact.html:84
+msgid "Email:"
+msgstr "Email:"
+
+#: templates/errors/404.html:14
+msgid "The page you are looking for isn't available"
+msgstr "La pagina che stai cercando non è disponibile"
+
+#: templates/errors/404.html:19
+msgid "Return to the homepage"
+msgstr "Torna alla homepage"
+
+#: templates/index.html:10
+msgid "Homepage"
+msgstr "Homepage"
+
+#: templates/index.html:17
+msgid "Your browser does not support HTML5 video."
+msgstr "Il tuo browser non supporta il video HTML5."
+
+#: templates/index.html:21
+msgid "Your captivating introduction here."
+msgstr "La tua introduzione accattivante qui."
+
+#: templates/index.html:27
+msgid "Property Listings"
+msgstr "Annunci Immobiliari"
+
+#: templates/index.html:40 templates/index.html:97 templates/index.html:145
+#: templates/profiles/user_profile.html:57
+#: templates/properties/properties.html:84
+#: templates/properties/property_details.html:47
+#: templates/properties/property_details.html:65
+msgid "Your browser does not support the video tag."
+msgstr "Il tuo browser non supporta il tag video."
+
+#: templates/index.html:51
+msgid "Placeholder"
+msgstr "Segnaposto"
+
+#: templates/index.html:65
+msgid "No properties available at the moment."
+msgstr "Nessuna proprietà disponibile al momento."
+
+#: templates/index.html:74
+msgid "View All Properties"
+msgstr "Visualizza Tutte le Proprietà"
+
+#: templates/index.html:82
+msgid "About the Company"
+msgstr "Chi Siamo"
+
+#: templates/index.html:87
+msgid "Company Owner"
+msgstr "Proprietario dell'Azienda"
+
+#: templates/index.html:88
+msgid "Team"
+msgstr "Team"
+
+#: templates/index.html:99
+msgid "The First Building"
+msgstr "Il Primo Edificio"
+
+#: templates/index.html:109
+msgid "Buildings Built"
+msgstr "Edifici Costruiti"
+
+#: templates/index.html:113
+msgid "Apartments Available"
+msgstr "Appartamenti Disponibili"
+
+#: templates/index.html:117
+msgid "Faster Turnaround"
+msgstr "Tempi di Risposta più Rapidi"
+
+#: templates/index.html:121
+msgid "Our Achievements"
+msgstr "I Nostri Successi"
+
+#: templates/index.html:133
+msgid "How It All Started & How We Are Going"
+msgstr "Come è Tutto Iniziato & Come Stiamo Andando"
+
+#: templates/index.html:135
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor nec "
+"justo posuere dignissim. Aliquam erat volutpat. Nam at vestibulum magna. "
+"Integer fermentum urna ut lacus auctor, vel aliquam odio blandit."
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor nec "
+"justo posuere dignissim. Aliquam erat volutpat. Nam at vestibulum magna. "
+"Integer fermentum urna ut lacus auctor, vel aliquam odio blandit."
+
+#: templates/index.html:138
+msgid ""
+"Ut lacinia cursus tortor non egestas. Donec a felis at sapien sollicitudin "
+"aliquet. Sed tempus nisl vel tortor malesuada, ut faucibus mi efficitur. "
+"Nulla facilisi. Vestibulum viverra arcu et enim varius, eget dictum velit "
+"egestas."
+msgstr ""
+"Ut lacinia cursus tortor non egestas. Donec a felis at sapien sollicitudin "
+"aliquet. Sed tempus nisl vel tortor malesuada, ut faucibus mi efficitur. "
+"Nulla facilisi. Vestibulum viverra arcu et enim varius, eget dictum velit "
+"egestas."
+
+#: templates/profiles/user_profile.html:13
+msgid "Profile of"
+msgstr "Profilo di"
+
+#: templates/profiles/user_profile.html:15
+msgid "Details"
+msgstr "Dettagli"
+
+#: templates/profiles/user_profile.html:16
+msgid "First Name"
+msgstr "Nome"
+
+#: templates/profiles/user_profile.html:17
+msgid "Last Name"
+msgstr "Cognome"
+
+#: templates/profiles/user_profile.html:19
+msgid "Change your password"
+msgstr "Cambia la tua password"
+
+#: templates/profiles/user_profile.html:19
+msgid "here"
+msgstr "qui"
+
+#: templates/profiles/user_profile.html:20
+msgid "Phone Number"
+msgstr "Numero di Telefono"
+
+#: templates/profiles/user_profile.html:20
+msgid "Not provided"
+msgstr "Non fornito"
+
+#: templates/profiles/user_profile.html:22
+msgid ""
+"If you would like to register or update your details, please do so below"
+msgstr ""
+"Se desideri registrarti o aggiornare i tuoi dati, per favore fallo qui sotto"
+
+#: templates/profiles/user_profile.html:40
+msgid "Update"
+msgstr "Aggiorna"
+
+#: templates/profiles/user_profile.html:82
+#: templates/properties/properties.html:114
+msgid "sq ft"
+msgstr "mq"
+
+#: templates/profiles/user_profile.html:94
+#: templates/properties/properties.html:128
+msgid "Bedrooms"
+msgstr "Camere da Letto"
+
+#: templates/profiles/user_profile.html:99
+#: templates/properties/properties.html:133
+msgid "Bathrooms"
+msgstr "Bagni"
+
+#: templates/profiles/user_profile.html:127
+msgid "No liked properties yet."
+msgstr "Nessuna proprietà preferita ancora."
+
+#: templates/profiles/user_profile.html:130
+msgid "View Properties"
+msgstr "Visualizza Proprietà"
+
+#: templates/properties/properties.html:29
+msgid "Location"
+msgstr "Posizione"
+
+#: templates/properties/properties.html:39
+msgid "Type"
+msgstr "Tipo"
+
+#: templates/properties/properties.html:47
+msgid "Filter"
+msgstr "Filtra"
+
+#: templates/properties/properties.html:57
+msgid "Size (smaller to larger)"
+msgstr "Dimensione (dal più piccolo al più grande)"
+
+#: templates/properties/properties.html:58
+msgid "Size (larger to smaller)"
+msgstr "Dimensione (dal più grande al più piccolo)"
+
+#: templates/properties/properties.html:59
+msgid "Price (low to high)"
+msgstr "Prezzo (dal più basso al più alto)"
+
+#: templates/properties/properties.html:60
+msgid "Price (high to low)"
+msgstr "Prezzo (dal più alto al più basso)"
+
+#: templates/properties/properties.html:67
+msgid "All Properties"
+msgstr "Tutte le Proprietà"
+
+#: templates/properties/properties.html:69
+msgid "found for"
+msgstr "trovate per"
+
+#: templates/properties/properties.html:219
+msgid "Please log in to add a property to your favourites."
+msgstr "Per aggiungere una proprietà ai tuoi preferiti, per favore effettua il login."
+
+#: templates/properties/property_details.html:16
+msgid "Location:"
+msgstr "Posizione:"
+
+#: templates/properties/property_details.html:17
+msgid "Size:"
+msgstr "Dimensione:"
+
+#: templates/properties/property_details.html:18
+msgid "Type:"
+msgstr "Tipo:"
+
+#: templates/properties/property_details.html:19
+msgid "Bedrooms:"
+msgstr "Camere da Letto:"
+
+#: templates/properties/property_details.html:20
+msgid "Bathrooms:"
+msgstr "Bagni:"
+
+#: templates/properties/property_details.html:25
+msgid "Features:"
+msgstr "Caratteristiche:"
+
+#: templates/properties/property_details.html:32
+msgid "No features listed."
+msgstr "Nessuna caratteristica elencata."
+
+#: templates/properties/property_details.html:39
+msgid "Description:"
+msgstr "Descrizione:"
+
+#: templates/properties/property_details.html:72
+msgid "Back to Properties"
+msgstr "Torna alle Proprietà"
+
+#: templates/properties/property_management.html:27
+msgid "Property Details"
+msgstr "Dettagli Proprietà"
+
+#: templates/properties/property_management.html:39
+msgid "Property Images"
+msgstr "Immagini della Proprietà"
+
+#: templates/properties/property_management.html:55
+msgid "Property Videos"
+msgstr "Video della Proprietà"
+
+#: templates/properties/property_management.html:70
+msgid "Save Property"
+msgstr "Salva Proprietà"
+
+#: venv/lib/python3.12/site-packages/cloudinary/forms.py:55
+#: venv/lib/python3.12/site-packages/cloudinary/forms.py:124
+msgid "No file selected!"
+msgstr "Nessun file selezionato!"
+
+#: venv/lib/python3.12/site-packages/crispy_forms/tests/test_form_helper.py:129
+#: venv/lib/python3.12/site-packages/crispy_forms/tests/test_form_helper.py:139
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:95
+msgid "This field is required."
+msgstr "Questo campo è obbligatorio."
+
+#: venv/lib/python3.12/site-packages/crispy_forms/tests/test_layout.py:361
+msgid "i18n text"
+msgstr "testo i18n"
+
+#: venv/lib/python3.12/site-packages/crispy_forms/tests/test_layout.py:361
+msgid "i18n legend"
+msgstr "leggenda i18n"
+
+#: venv/lib/python3.12/site-packages/crispy_forms/tests/test_layout_objects.py:129
+#: venv/lib/python3.12/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr "Inserisci un valore valido."
+
+#: venv/lib/python3.12/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr "Messaggi"
+
+#: venv/lib/python3.12/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Sitemap"
+
+#: venv/lib/python3.12/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr "File Statici"
+
+#: venv/lib/python3.12/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr "Syndication"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr "Quel numero di pagina non è un intero"
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr "Quel numero di pagina è inferiore a 1"
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr "Quella pagina non contiene risultati"
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:70
+msgid "Enter a valid domain name."
+msgstr "Inserisci un nome di dominio valido."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:152
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:768
+msgid "Enter a valid URL."
+msgstr "Inserisci un URL valido."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:213
+msgid "Enter a valid integer."
+msgstr "Inserisci un intero valido."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:224
+msgid "Enter a valid email address."
+msgstr "Inserisci un indirizzo email valido."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: venv/lib/python3.12/site-packages/django/core/validators.py:307
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Inserisci uno “slug” valido composto da lettere, numeri, trattini bassi o trattini."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:315
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"Inserisci uno “slug” valido composto da lettere Unicode, numeri, trattini bassi o "
+"trattini."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:327
+#: venv/lib/python3.12/site-packages/django/core/validators.py:336
+#: venv/lib/python3.12/site-packages/django/core/validators.py:350
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2215
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "Inserisci un indirizzo %(protocol)s valido."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:329
+msgid "IPv4"
+msgstr "IPv4"
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:338
+#: venv/lib/python3.12/site-packages/django/utils/ipv6.py:30
+msgid "IPv6"
+msgstr "IPv6"
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:352
+msgid "IPv4 or IPv6"
+msgstr "IPv4 o IPv6"
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:393
+msgid "Enter only digits separated by commas."
+msgstr "Inserisci solo numeri separati da virgole."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:399
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Assicurati che questo valore sia %(limit_value)s (è %(show_value)s)."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:434
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Assicurati che questo valore sia inferiore o uguale a %(limit_value)s."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:443
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Assicurati che questo valore sia maggiore o uguale a %(limit_value)s."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:452
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Assicurati che questo valore sia un multiplo del passo %(limit_value)s."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:459
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"Assicurati che questo valore sia un multiplo del passo %(limit_value)s, partendo da "
+"%(offset)s, ad esempio %(offset)s, %(valid_value1)s, %(valid_value2)s, e così via."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Assicurati che questo valore abbia almeno %(limit_value)d carattere (ne ha "
+"%(show_value)d)."
+msgstr[1] ""
+"Assicurati che questo valore abbia almeno %(limit_value)d caratteri (ne ha "
+"%(show_value)d)."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:509
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Assicurati che questo valore abbia al massimo %(limit_value)d carattere (ne ha "
+"%(show_value)d)."
+msgstr[1] ""
+"Assicurati che questo valore abbia al massimo %(limit_value)d caratteri (ne ha "
+"%(show_value)d)."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:532
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:359
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:398
+msgid "Enter a number."
+msgstr "Inserisci un numero."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:534
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+"Assicurati che ci siano al massimo %(max)s cifra in totale."
+msgstr[1] ""
+"Assicurati che ci siano al massimo %(max)s cifre in totale."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:539
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+"Assicurati che ci siano al massimo %(max)s decimale."
+msgstr[1] ""
+"Assicurati che ci siano al massimo %(max)s decimali."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:544
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+"Assicurati che ci siano al massimo %(max)s cifra prima del punto decimale."
+msgstr[1] ""
+"Assicurati che ci siano al massimo %(max)s cifre prima del punto decimale."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:615
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"L'estensione del file “%(extension)s” non è consentita. Le estensioni permesse sono: "
+"%(allowed_extensions)s."
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:677
+msgid "Null characters are not allowed."
+msgstr "I caratteri nulli non sono consentiti."
+
+#: venv/lib/python3.12/site-packages/django/db/models/base.py:1571
+#: venv/lib/python3.12/site-packages/django/forms/models.py:908
+msgid "and"
+msgstr "e"
+
+#: venv/lib/python3.12/site-packages/django/db/models/base.py:1573
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s con questo %(field_labels)s esiste già."
+
+#: venv/lib/python3.12/site-packages/django/db/models/constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "La restrizione “%(name)s” è violata."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "Il valore %(value)r non è una scelta valida."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be null."
+msgstr "Questo campo non può essere nullo."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:136
+msgid "This field cannot be blank."
+msgstr "Questo campo non può essere vuoto."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s con questo %(field_label)s esiste già."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s deve essere unico per %(date_field_label)s %(lookup_type)s."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Campo di tipo: %(field_type)s"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1156
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "Il valore “%(value)s” deve essere True o False."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1157
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "Il valore “%(value)s” deve essere True, False o None."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1159
+msgid "Boolean (Either True or False)"
+msgstr "Booleano (True o False)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1209
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "Stringa (fino a %(max_length)s)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1211
+msgid "String (unlimited)"
+msgstr "Stringa (illimitata)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1320
+msgid "Comma-separated integers"
+msgstr "Interi separati da virgola"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1421
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"Il valore “%(value)s” ha un formato di data non valido. Deve essere nel formato YYYY-MM-DD."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1425
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1560
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"Il valore “%(value)s” ha il formato corretto (YYYY-MM-DD) ma è una data non valida."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1429
+msgid "Date (without time)"
+msgstr "Data (senza ora)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1556
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+"Il valore “%(value)s” ha un formato non valido. Deve essere nel formato YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1564
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"Il valore “%(value)s” ha il formato corretto (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) ma è una data/ora non valida."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1569
+msgid "Date (with time)"
+msgstr "Data (con ora)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1696
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "Il valore “%(value)s” deve essere un numero decimale."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1698
+msgid "Decimal number"
+msgstr "Numero decimale"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1859
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+"Il valore “%(value)s” ha un formato non valido. Deve essere nel formato [DD] [[HH:]MM:]ss[.uuuuuu]."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1863
+msgid "Duration"
+msgstr "Durata"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1915
+msgid "Email address"
+msgstr "Indirizzo email"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1940
+msgid "File path"
+msgstr "Percorso file"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2018
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "Il valore “%(value)s” deve essere un float."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2020
+msgid "Floating point number"
+msgstr "Numero a virgola mobile"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2060
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "Il valore “%(value)s” deve essere un intero."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2062
+msgid "Integer"
+msgstr "Intero"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2158
+msgid "Big (8 byte) integer"
+msgstr "Intero grande (8 byte)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2175
+msgid "Small integer"
+msgstr "Intero piccolo"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2183
+msgid "IPv4 address"
+msgstr "Indirizzo IPv4"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2214
+msgid "IP address"
+msgstr "Indirizzo IP"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2305
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2306
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "Il valore “%(value)s” deve essere None, True o False."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2308
+msgid "Boolean (Either True, False or None)"
+msgstr "Booleano (True, False o None)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2359
+msgid "Positive big integer"
+msgstr "Intero grande positivo"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2374
+msgid "Positive integer"
+msgstr "Intero positivo"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2389
+msgid "Positive small integer"
+msgstr "Intero piccolo positivo"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2405
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (fino a %(max_length)s)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2441
+msgid "Text"
+msgstr "Testo"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2521
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"Il valore “%(value)s” ha un formato non valido. Deve essere nel formato HH:MM[:ss[.uuuuuu]]."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2525
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"Il valore “%(value)s” ha il formato corretto (HH:MM[:ss[.uuuuuu]]) ma è un'ora non valida."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2529
+msgid "Time"
+msgstr "Ora"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2637
+msgid "URL"
+msgstr "URL"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2661
+msgid "Raw binary data"
+msgstr "Dati binari grezzi"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2726
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” non è un UUID valido."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2728
+msgid "Universally unique identifier"
+msgstr "Identificatore univoco universale"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/files.py:244
+msgid "File"
+msgstr "File"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr "Immagine"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/json.py:24
+msgid "A JSON object"
+msgstr "Un oggetto JSON"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/json.py:26
+msgid "Value must be valid JSON."
+msgstr "Il valore deve essere un JSON valido."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:932
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr "L'istanza di %(model)s con %(field)s %(value)r non esiste."
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:934
+msgid "Foreign Key (type determined by related field)"
+msgstr "Chiave esterna (tipo determinato dal campo correlato)"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1228
+msgid "One-to-one relationship"
+msgstr "Relazione uno a uno"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1285
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "Relazione %(from)s-%(to)s"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1287
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "Relazioni %(from)s-%(to)s"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1335
+msgid "Many-to-many relationship"
+msgstr "Relazione molti a molti"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python3.12/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ":?.!"
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:308
+msgid "Enter a whole number."
+msgstr "Inserisci un numero intero."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:479
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1260
+msgid "Enter a valid date."
+msgstr "Inserisci una data valida."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:502
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1261
+msgid "Enter a valid time."
+msgstr "Inserisci un'ora valida."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:529
+msgid "Enter a valid date/time."
+msgstr "Inserisci una data/ora valida."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:563
+msgid "Enter a valid duration."
+msgstr "Inserisci una durata valida."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:564
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "Il numero di giorni deve essere compreso tra {min_days} e {max_days}."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:633
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "Nessun file è stato inviato. Controlla il tipo di codifica nel modulo."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:634
+msgid "No file was submitted."
+msgstr "Nessun file è stato inviato."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:635
+msgid "The submitted file is empty."
+msgstr "Il file inviato è vuoto."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:637
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural "Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] "Assicurati che questo nome file abbia al massimo %(max)d carattere (ne ha %(length)d)."
+msgstr[1] "Assicurati che questo nome file abbia al massimo %(max)d caratteri (ne ha %(length)d)."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:642
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "Per favore, invia un file oppure seleziona la casella di controllo per cancellare, non entrambe le opzioni."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:710
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"Carica un'immagine valida. Il file caricato non era un'immagine oppure è un'immagine corrotta."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:882
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:968
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "Seleziona una scelta valida. %(value)s non è tra le scelte disponibili."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:970
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1089
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1590
+msgid "Enter a list of values."
+msgstr "Inserisci un elenco di valori."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1090
+msgid "Enter a complete value."
+msgstr "Inserisci un valore completo."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1329
+msgid "Enter a valid UUID."
+msgstr "Inserisci un UUID valido."
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1359
+msgid "Enter a valid JSON."
+msgstr "Inserisci un JSON valido."
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.12/site-packages/django/forms/forms.py:94
+msgid ":"
+msgstr ":"
+
+#: venv/lib/python3.12/site-packages/django/forms/forms.py:230
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Campo nascosto %(name)s) %(error)s"
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"I dati del ManagementForm sono mancanti o sono stati manomessi. Campi mancanti: "
+"%(field_names)s. Potrebbe essere necessario segnalare un bug se il problema persiste."
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Per favore, invia al massimo %(num)d modulo."
+msgstr[1] "Per favore, invia al massimo %(num)d moduli."
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Per favore, invia almeno %(num)d modulo."
+msgstr[1] "Per favore, invia almeno %(num)d moduli."
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr "Ordine"
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr "Elimina"
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "Per favore, correggi i dati duplicati per %(field)s."
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr "Per favore, correggi i dati duplicati per %(field)s, che devono essere unici."
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"Per favore, correggi i dati duplicati per %(field_name)s che devono essere unici "
+"per il %(lookup)s in %(date_field)s."
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:922
+msgid "Please correct the duplicate values below."
+msgstr "Per favore, correggi i valori duplicati qui sotto."
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr "Il valore inline non corrisponde all'istanza genitore."
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr "Seleziona una scelta valida. Quella scelta non è tra le opzioni disponibili."
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” non è un valore valido."
+
+#: venv/lib/python3.12/site-packages/django/forms/utils.py:227
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s non può essere interpretato nel fuso orario %(current_timezone)s; potrebbe essere ambiguo o potrebbe non esistere."
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:461
+msgid "Clear"
+msgstr "Pulisci"
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:462
+msgid "Currently"
+msgstr "Attualmente"
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:463
+msgid "Change"
+msgstr "Cambia"
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:800
+msgid "Unknown"
+msgstr "Sconosciuto"
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:801
+msgid "Yes"
+msgstr "Sì"
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:802
+msgid "No"
+msgstr "No"
+
+#. Translators: Please do not add spaces around commas.
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr "sì,no,forse"
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:903
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d byte"
+msgstr[1] "%(size)d byte"
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr "p.m."
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr "a.m."
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr "PM"
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr "AM"
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr "mezzanotte"
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr "mezzogiorno"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr "Lunedì"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr "Martedì"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr "Mercoledì"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr "Giovedì"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr "Venerdì"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr "Sabato"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr "Domenica"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr "Lun"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr "Mar"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr "Mer"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr "Gio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr "Ven"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr "Sab"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr "Dom"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr "Gennaio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr "Febbraio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr "Marzo"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr "Aprile"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr "Maggio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr "Giugno"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr "Luglio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr "Agosto"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr "Settembre"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr "Ottobre"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr "Novembre"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr "Dicembre"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr "gen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr "feb"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr "apr"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr "mag"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr "giu"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr "lug"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr "ago"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr "set"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr "ott"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr "nov"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr "dic"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Gen."
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Feb."
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "Marzo"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "Aprile"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "Maggio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "Giugno"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "Luglio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Ago."
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Set."
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Ott."
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Nov."
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Dic."
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "Gennaio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "Febbraio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "Marzo"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "Aprile"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "Maggio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "Giugno"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "Luglio"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "Agosto"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "Settembre"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "Ottobre"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "Novembre"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "Dicembre"
+
+#: venv/lib/python3.12/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr "Questo non è un indirizzo IPv6 valido."
+
+#: venv/lib/python3.12/site-packages/django/utils/text.py:75
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.12/site-packages/django/utils/text.py:305
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ", "
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] "%(num)d anno"
+msgstr[1] "%(num)d anni"
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "%(num)d mese"
+msgstr[1] "%(num)d mesi"
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] "%(num)d settimana"
+msgstr[1] "%(num)d settimane"
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] "%(num)d giorno"
+msgstr[1] "%(num)d giorni"
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] "%(num)d ora"
+msgstr[1] "%(num)d ore"
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] "%(num)d minuto"
+msgstr[1] "%(num)d minuti"
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr "Vietato"
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "Verifica CSRF fallita. Richiesta annullata."
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"Vedi questo messaggio perché questo sito HTTPS richiede che un’intestazione "
+"“Referer” venga inviata dal tuo browser, ma nessuna è stata inviata. Questa "
+"intestazione è richiesta per motivi di sicurezza, per garantire che il tuo "
+"browser non venga preso di mira da terze parti."
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"Se hai configurato il tuo browser per disabilitare le intestazioni “Referer”, "
+"per favore riabilitale, almeno per questo sito, o per le connessioni HTTPS, "
+"o per le richieste di “stesso origine”."
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"Se stai usando il tag <meta name=\"referrer\" content=\"no-referrer\"> o "
+"includendo l’intestazione “Referrer-Policy: no-referrer”, per favore "
+"rimuovili. La protezione CSRF richiede l’intestazione “Referer” per effettuare "
+"un controllo rigoroso del referer. Se sei preoccupato per la privacy, usa "
+"alternative come <a rel=\"noreferrer\" …> per i link ai siti di terze parti."
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"Vedi questo messaggio perché questo sito richiede un cookie CSRF quando "
+"invii moduli. Questo cookie è richiesto per motivi di sicurezza, per garantire "
+"che il tuo browser non venga preso di mira da terze parti."
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"Se hai configurato il tuo browser per disabilitare i cookie, per favore riabilitali, "
+"almeno per questo sito, o per le richieste di “stesso origine”."
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "Maggiori informazioni sono disponibili con DEBUG=True."
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr "Anno non specificato"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:64
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:115
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr "Data fuori intervallo"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr "Mese non specificato"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr "Giorno non specificato"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr "Settimana non specificata"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:349
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "Nessun %(verbose_name_plural)s disponibile"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+"Futuri %(verbose_name_plural)s non disponibili perché %(class_name)s."
+"allow_future è False."
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Stringa di data non valida “%(datestr)s” con formato “%(format)s”"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "Nessun %(verbose_name)s trovato che corrisponde alla query"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "La pagina non è “ultima” e non può essere convertita in un int."
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Pagina non valida (%(page_number)s): %(message)s"
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Lista vuota e “%(class_name)s.allow_empty” è False."
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "Gli indici di directory non sono consentiti qui."
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” non esiste"
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:68
+#: venv/lib/python3.12/site-packages/django/views/templates/directory_index.html:8
+#: venv/lib/python3.12/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "Indice di %(directory)s"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:7
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "L'installazione è avvenuta con successo! Congratulazioni!"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"Consulta <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">le note di rilascio</a> per Django %(version)s"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+"Stai vedendo questa pagina perché <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> è nel tuo file di impostazioni e non hai "
+"configurato alcun URL."
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "Documentazione di Django"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Argomenti, riferimenti e guide"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "Tutorial: Un'app di sondaggio"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "Inizia con Django"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:235
+msgid "Django Community"
+msgstr "Comunità Django"
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "Connettiti, ottieni aiuto o contribuisci"
