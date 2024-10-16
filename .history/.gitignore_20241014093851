@@ -11,12 +11,3 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
-
-.venv/
-venv/
-env/
-.env
-*.sqlite3
-db.sqlite3
-*.log
-.DS_Store
