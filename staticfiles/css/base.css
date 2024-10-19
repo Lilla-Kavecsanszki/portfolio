@@ -5,18 +5,18 @@
 }
 
 body {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #182d5f;
+    background-color: #E5E3E1;
+    color: #171006;
 }
 
 /* Header styles */
 header {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #3C401A;
     font-family: "Playfair Display", serif;
-    color: #182d5f;
+    color: #171006;
     padding: 0.3em;
     position: fixed;
     width: 100%;
@@ -36,7 +36,7 @@ header {
 .logo-font {
     font-size: 2rem;
     white-space: nowrap;
-    color: #182d5f;
+    color: #3C401A;
 }
 
 .logo {
@@ -56,36 +56,36 @@ header {
 }
 
 #user-name {
-    color: #182d5f
+    color: #5F4B2A
 }
 
 #user-name:hover {
-    color: #a9a9a9;
+    color: #E5E3E1;
 }
 
 .nav-icon {
-    color: #182d5f;
+    color: #5F4B2A;
 }
 
 .nav-icon:hover {
-    color: #a9a9a9;
+    color: #E5E3E1;
 }
 
 /* Dropdown menu styles */
 .dropdown-menu {
-    background-color: #ffffff; /* Ensure the dropdown has a background color */
+    background-color: #3C401A; /* Ensure the dropdown has a background color */
     border: 1px solid #ddd; /* Add a border if needed */
     border-radius: 0.25rem; /* Adjust border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
 }
 
 .dropdown-item {
-    color: #182d5f; /* Ensure dropdown items have text color */
+    color: #5F4B2A; /* Ensure dropdown items have text color */
 }
 
 .dropdown-item:hover {
-    background-color: #a9a9a9; /* Change background color on hover */
-    color: #182d5f; /* Ensure text color remains consistent */
+    background-color: #E5E3E1; /* Change background color on hover */
+    color: #5F4B2A; /* Ensure text color remains consistent */
 }
 
 /* Ensure that dropdown toggle is properly displayed */
@@ -94,11 +94,11 @@ header {
 }
 
 #language-options {
-    color: #182d5f;
+    color: #5F4B2A;
 }
 
 .navbar-nav a {
-    color: #182d5f;
+    color: #5F4B2A;
     text-decoration: none;
     font-size: large;
 }
@@ -110,11 +110,11 @@ header {
 /* Icon styles */
 .icon {
     display: inline-block;
-    color: #182d5f;
+    color: #5F4B2A;
 }
 
 .icon:hover {
-    color: #a9a9a9;
+    color: #E5E3E1;
     
 }
 
@@ -198,7 +198,7 @@ header {
 .hero h1 {
     font-size: 3.5em;
     margin: 0;
-    font-family: "Cinzel", serif;
+    font-family: "Italiana", sans-serif;
 }
 
 .hero p {
@@ -486,7 +486,7 @@ main {
 }
 
 .property-details h3 {
-    font-family: "Cinzel", serif;
+    font-family: "Playfair Display", serif;
     color: #182d5f;
     font-size: 1.2rem;
     margin: 0;
@@ -535,7 +535,7 @@ main {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     font-size: 1.2rem;
-    font-family: "Cinzel", serif;
+    font-family: "Playfair Display", serif;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -577,7 +577,7 @@ main {
 
 .company-story h2 {
     color: #182d5f;    
-    font-family: "Cormorant Garamond", serif;    
+    font-family: "Italiana", sans-serif;    
     text-align: justify;  
     margin-bottom: 1em;        
     font-size: 2.3em;       
@@ -586,7 +586,7 @@ main {
 
 .company-story p {
     color: #182d5f;    
-    font-family: "Cormorant Garamond", serif; 
+    font-family: "Montserrat", sans-serif;
     text-align: justify;       
     line-height: 1.6;          
     margin-bottom: 1em;        

@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Building Sardinia - Your premier resource for real estate, construction, and renovation in Sardinia. Discover exceptional properties, expert construction services, and renovation solutions to build your dream home.">
-    <meta name="keywords" content="real estate, construction, renovation, Sardinia, property, dream home, building services, property management, home improvement">
+    <meta name="description" content="Lilla Kavecsanszki - Full Stack Web Developer resource for real estate, construction, and renovation in Sardinia. Discover exceptional properties, expert construction services, and renovation solutions to build your dream home.">
+    <meta name="keywords" content="web developer, construction, renovation, Sardinia, property, dream home, building services, property management, home improvement">
     {% endblock %} {% block extra_meta %} {% endblock %}
 
     <title>{% block title %}{% trans "Building Oristano" %}{% endblock %}</title>
@@ -26,8 +26,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
     
@@ -52,7 +52,7 @@
             <div class="col-lg-6 d-flex justify-content-end">
                 <div class="d-flex justify-content-start align-items-center">
                     <!-- Search Bar -->
-                    <form method="GET" action="{% url 'all_properties' %}" class="w-100">
+                    <form method="GET" action="{% url 'home' %}" class="w-100">
                         <div class="input-group w-100">
                             <input class="form-control border-1 bg-transparent" type="text" name="q" placeholder="{% trans 'Search by Name' %}" style="border-bottom: 1px solid #051c2c;">
                             <div class="input-group-append">
@@ -63,43 +63,6 @@
                         </div>
                     </form>
                 </div>
-                <div class="d-flex justify-content-end align-items-center">
-                    <!-- Sign-In Link -->
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center nav-icon">
-                                    {% if request.user.is_authenticated %}
-                                    <div><i class="fas fa-solid fa-user fa-lg"></i></div>
-                                    <p class="my-0">{{ request.user.username }}</p>
-                                    {% else %}
-                                    <div><i class="far fa-regular fa-user fa-lg"></i></div>
-                                    <p class="my-0">{% trans 'Account' %}</p>
-                                    {% endif %}
-                                </div>
-                            </a>
-                            
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                    <!-- superuser -->
-                                    {% if request.user.is_superuser %}
-                                    <a href="{% url 'property_management' %}" class="dropdown-item">{% trans 'Property Management' %}</a>
-                                    {% endif %}
-                                    <a href="{% url 'user_profile' %}" class="dropdown-item">
-                                        {% trans 'My Favourites' %} 
-                                        <i class="fas fa-star fa-star-base light-base"></i>
-                                    </a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">{% trans 'Logout' %}</a>
-                                {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">{% trans 'Register' %}</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">{% trans 'Login' %}</a>
-                                {% endif %}
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Conditionally render the language dropdown only on the homepage -->
-                {% if request.path == homepage_url or request.path == '/' %}
                 <div class="d-flex justify-content-end align-items-center">
                     <!-- Language Dropdown -->
                     <ul class="list-inline mb-0">
@@ -115,11 +78,10 @@
                                 <a href="#" class="dropdown-item {% if LANGUAGE_CODE == 'it' %}active{% endif %}" onclick="switchLanguage('it')">IT</a>
                             </div>
                         </li>
-                    </ul>                                                                               
+                    </ul>
                 </div>
-                {% endif %}
             </div>
-        </div>
+        </div>        
 
         <!-- Mobile Header Section -->
         <div class="d-block d-lg-none">
@@ -130,61 +92,34 @@
         <!-- Navigation Bar -->
         <div class="row nav-background">
             <nav class="navbar navbar-expand-lg w-100 col-lg-12 justify-content-end d-flex">
+                <!-- Toggle button for mobile view -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="{% trans 'Toggle navigation' %}">
                     <i class="fas fa-bars"></i>
                 </button>
+                
+                <!-- Navigation Links -->
                 <div class="collapse navbar-collapse justify-content-end" id="main-nav">
                     <ul class="navbar-nav">
-                        {% if request.user.is_authenticated %}
-                            <!-- Check if user is superuser -->
-                            {% if request.user.is_superuser %}
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'admin:index' %}">{% trans 'Admin' %}</a>
-                                </li>
-                            {% endif %}
-                            <!-- Always display the following items for authenticated users -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'home' %}">{% trans 'Home' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'home' %}#apartment-types">{% trans 'Solutions' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'all_properties' %}">{% trans 'Apartments' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'construction' %}">{% trans 'Construction' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'home' %}#about">{% trans 'About' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'contact_us' %}">{% trans 'Contact' %}</a>
-                            </li>
-                        {% else %}
-                            <!-- Display items for non-authenticated users -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'home' %}">{% trans 'Home' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'home' %}#apartment-types">{% trans 'Solutions' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'all_properties' %}">{% trans 'Apartments' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'construction' %}">{% trans 'Construction' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'home' %}#about">{% trans 'About' %}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'contact_us' %}">{% trans 'Contact' %}</a>
-                            </li>
-                        {% endif %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">{% trans 'Home' %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}#apartment-types">{% trans 'Solutions' %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">{% trans 'Projects' %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}#about">{% trans 'About' %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact_us' %}">{% trans 'Contact' %}</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
+        </div>
+
             <div class="col-md-8 offset-md-2">
                 {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible fade show" role="msg" role="alert">

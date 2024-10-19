@@ -1,5 +1,5 @@
 body {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", sans-serif;
     background-color: white;
     color: #182d5f;
 }
@@ -20,7 +20,7 @@ body {
 
 h1 {
     color: #182d5f;
-    font-family: "Cinzel", serif;
+    font-family: "Italiana", sans-serif;
     font-weight: 700;
     margin-bottom: 1em;
     text-align: center;
@@ -107,7 +107,7 @@ animation: shiny-effect 5s ease-in-out infinite;
 .contact-details {
     flex: 1;
     padding: 2%;
-    font-family: "Italiana", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.3em;
     color: #182d5f;
     padding: 1em;
@@ -115,7 +115,7 @@ animation: shiny-effect 5s ease-in-out infinite;
 }
 
 .contact-details h3 {
-    font-family: "Cinzel", serif;
+    font-family: "Italiana", sans-serif;
     margin-bottom: 1em;
 }
 

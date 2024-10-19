@@ -1,36 +1,6 @@
 {% load i18n %}
 
 <ul class="list-inline mb-0">
-    <!-- User Options Dropdown -->
-    <li class="list-inline-item dropdown">
-        <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options-mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="text-center">
-                {% if request.user.is_authenticated %}
-                <div><i class="fa-solid fa-user fa-lg" style="color: #051c2c;"></i></div>
-                <p class="my-0" style="color: #051c2c;">{{ request.user.username }}</p>
-                {% else %}
-                <div><i class="fa-regular fa-user fa-lg" style="color: #051c2c;"></i></div>
-                <p class="my-0" style="color: #051c2c;">{% trans 'Account' %}</p>
-                {% endif %}
-            </div>
-        </a>
-        <div class="dropdown-menu dropdown-menu-center border-0" aria-labelledby="user-options-mobile">
-            {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-            <a href="{% url 'property_management' %}" class="dropdown-item">{% trans 'Property Management' %}</a>
-            {% endif %}
-            <a href="{% url 'user_profile' %}" class="dropdown-item">
-                {% trans 'My Favourites' %} 
-                <i class="fas fa-star fa-star-base light-base"></i>
-            </a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">{% trans 'Logout' %}</a>
-            {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">{% trans 'Register' %}</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">{% trans 'Login' %}</a>
-            {% endif %}
-        </div>
-    </li>
-
     <!-- Mobile Search Dropdown -->
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +10,7 @@
             </div>
         </a>
         <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-            <form class="form" method="GET" action="{% url 'all_properties' %}">
+            <form class="form" method="GET" action="{% url 'home' %}">
                 <div class="input-group w-100">
                     <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="{% trans 'Search by Name' %}" />
                     <div class="input-group-append">
@@ -72,4 +42,3 @@
     </li>
     {% endif %}
 </ul>
-

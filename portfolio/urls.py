@@ -13,9 +13,9 @@ handler404 = "portfolio.views.handler404"
 # Define the URL patterns for the app
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("accounts/", include("allauth.urls")),
-    path("contact/", include("contact.urls")),
-    path('', include('residenza.urls')),
+    path('', include('website.urls')),
+    path('projects/', include('projects.urls')),
+    path('contact/', include('contact.urls')),
 ]
 
 # Add language switching URL pattern outside i18n_patterns
@@ -26,9 +26,9 @@ urlpatterns += [
 
 # Adding i18n_patterns to handle language prefixes
 urlpatterns += i18n_patterns(
-    path("accounts/", include("allauth.urls")),
-    path("contact/", include("contact.urls")),
-    path('', include('residenza.urls')),
+    path('', include('website.urls')),
+    path('projects/', include('projects.urls')),
+    path('contact/', include('contact.urls')),
     prefix_default_language=True,
 )
 

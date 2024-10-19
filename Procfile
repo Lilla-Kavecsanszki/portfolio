@@ -1,1 +1,1 @@
-web: gunicorn residenza127.wsgi
+web: gunicorn portfolio.wsgi

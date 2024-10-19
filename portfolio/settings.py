@@ -22,9 +22,9 @@ TEMPLATES_DIR = BASE_DIR / "templates"
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
 
-# DEBUG = True
+DEBUG = True
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
-    "residenza",
+    "website",
+    "projects",
     "contact",
     "crispy_forms",
 ]
@@ -88,7 +89,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "django.template.context_processors.media",
-                "residenza.context_processors.available_languages",
+                "website.context_processors.available_languages",
             ],
             "builtins": [
                 "crispy_forms.templatetags.crispy_forms_tags",

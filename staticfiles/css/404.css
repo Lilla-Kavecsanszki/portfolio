@@ -1,5 +1,5 @@
 body {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", sans-serif;
     background-color: white;
     color: #182d5f;
 }
@@ -29,7 +29,7 @@ body {
 
 h1.logo-font {
     color: #182d5f;
-    font-family: "Cinzel", serif;
+    font-family: "Italiana", sans-serif;
     font-weight: 700;
     margin-bottom: 1em;
     text-align: center;
