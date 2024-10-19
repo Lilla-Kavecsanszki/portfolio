@@ -12,7 +12,7 @@
     <meta name="keywords" content="web developer, construction, renovation, Sardinia, property, dream home, building services, property management, home improvement">
     {% endblock %} {% block extra_meta %} {% endblock %}
 
-    <title>{% block title %}{% trans "Building Oristano" %}{% endblock %}</title>
+    <title>{% block title %}{% trans "Lilla Kavecsanszki" %}{% endblock %}</title>
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -54,10 +54,10 @@
                     <!-- Search Bar -->
                     <form method="GET" action="{% url 'home' %}" class="w-100">
                         <div class="input-group w-100">
-                            <input class="form-control border-1 bg-transparent" type="text" name="q" placeholder="{% trans 'Search by Name' %}" style="border-bottom: 1px solid #051c2c;">
+                            <input class="form-control border-1 bg-transparent" type="text" name="q" placeholder="{% trans 'Search by Name' %}" style="border-bottom: 1px solid #E5E3E1;">
                             <div class="input-group-append">
                                 <button class="form-control btn border-0" type="submit">
-                                    <span class="icon"><i class="fas fa-search fa-lg" style="color: #051c2c;"></i></span>
+                                    <span class="icon"><i class="fas fa-search fa-lg" style="color: #E5E3E1;"></i></span>
                                 </button>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                             <a class="nav-link" href="{% url 'home' %}#about">{% trans 'About' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'contact_us' %}">{% trans 'Contact' %}</a>
+                            <a class="nav-link" href="{% url 'home' %}#contact-us">{% trans 'Contact' %}</a>
                         </li>
                     </ul>
                 </div>
@@ -176,9 +176,13 @@
             <div class="col-md-2 mb-3 mb-md-0">
                 <p class="socials mb-3">
                     <span class="icon-container">
-                        <a class="links whatsapp" href="https://wa.me/393333951557"><i class="fab fa-whatsapp icon"></i></a>
-                        <a class="links insta" href="https://www.instagram.com/ar.gi.costruzioni_/?hl=en"><i class="fab fa-instagram icon"></i></a>
-                        <a class="links location" href="https://www.google.com/maps/search/?api=1&query=Via+Cagliari+126,+Oristano"><i class="fa-solid fa-location-dot icon"></i></a>
+                        <a class="links whatsapp" href="https://wa.me/393898930889"><i class="fab fa-whatsapp icon"></i></a>
+                        <a class="links github" href="https://github.com/Lilla-Kavecsanszki" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github icon"></i>
+                        </a>
+                        <a class="links linkedin" href="https://www.linkedin.com/in/lilla-kavecsanszki-31888a100/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in icon"></i>
+                        </a>                        
                     </span>
                 </p>
             </div>
@@ -188,11 +192,11 @@
                 <p class="lilla mb-2"><strong>Contact Information:</strong></p>
                 <p class="mb-1">
                     <strong>Phone:</strong><br> <!-- Added <br> for line break -->
-                    <a href="tel:+393333951557" class="footer-link email-link">+39 333 395 1557</a>
+                    <a href="tel:+393898930889" class="footer-link email-link">+39 389 893 0889</a>
                 </p>
                 <p class="mb-1">
                     <strong>Email:</strong><br> <!-- Added <br> for line break -->
-                    <a href="mailto:ar.gi.srls@pec.it" class="footer-link email-link">ar.gi.srls@pec.it</a>
+                    <a href="mailto:lilla-kavecsanszki@outlook.com" class="footer-link email-link">lilla-kavecsanszki@outlook.com</a>
                 </p>
             </div>
         </div>

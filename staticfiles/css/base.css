@@ -29,7 +29,7 @@ header {
 }
 
 .main-logo-link {
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ header {
 
 .logo {
     position: absolute; /* Position the logo absolutely */
-    margin-top: 20%;
+    margin-top: 25%;
     z-index: 10000; /* Ensure the logo is above the navbar */
 }
 
@@ -56,7 +56,7 @@ header {
 }
 
 #user-name {
-    color: #5F4B2A
+    color: #ffffff
 }
 
 #user-name:hover {
@@ -64,11 +64,11 @@ header {
 }
 
 .nav-icon {
-    color: #5F4B2A;
+    color: #E5E3E1;
 }
 
 .nav-icon:hover {
-    color: #E5E3E1;
+    color: #989491;
 }
 
 /* Dropdown menu styles */
@@ -76,16 +76,16 @@ header {
     background-color: #3C401A; /* Ensure the dropdown has a background color */
     border: 1px solid #ddd; /* Add a border if needed */
     border-radius: 0.25rem; /* Adjust border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
 }
 
 .dropdown-item {
-    color: #5F4B2A; /* Ensure dropdown items have text color */
+    color: #ffffff; /* Ensure dropdown items have text color */
 }
 
 .dropdown-item:hover {
     background-color: #E5E3E1; /* Change background color on hover */
-    color: #5F4B2A; /* Ensure text color remains consistent */
+    color: #3C401A; /* Ensure text color remains consistent */
 }
 
 /* Ensure that dropdown toggle is properly displayed */
@@ -94,11 +94,11 @@ header {
 }
 
 #language-options {
-    color: #5F4B2A;
+    color: #E5E3E1;
 }
 
 .navbar-nav a {
-    color: #5F4B2A;
+    color: #ffffff;
     text-decoration: none;
     font-size: large;
 }
@@ -110,11 +110,11 @@ header {
 /* Icon styles */
 .icon {
     display: inline-block;
-    color: #5F4B2A;
+    color: #E5E3E1;
 }
 
 .icon:hover {
-    color: #E5E3E1;
+    color: red;
     
 }
 
@@ -170,11 +170,12 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 70px;
 }
 
-.hero #hero-video {
+.hero #hero-image {
     position: absolute;
-    top: 0;
+    top: 70px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -183,16 +184,19 @@ header {
 
 .hero .hero-content {
     text-align: center;
-    color: white;
+    color: #171006;
     z-index: 1;
+    margin-left: -25%;
 }
 
 .hero-content h1 {
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Stronger shadow for h1 */
+    color: #171006;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Stronger shadow for p */
+    color: #171006;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
@@ -647,7 +651,7 @@ main {
 
 /* Footer styles */
 .footer-cover {
-    background-color: #182d5f;
+    background-color: #3C401A;
     padding: 2rem 0; /* Adjust padding as needed */
 }
 
@@ -719,13 +723,13 @@ p.lilla a.email-link:hover {
 
 footer a .icon {
     position: relative;
-    color: #1d220c;
+    color: #171006;
     transition: .5s;
     z-index: 3;
 }
 
 .icon {
-    color: #1d220c;
+    color: #171006;
     transition: .5s;
 }
 
@@ -838,49 +842,7 @@ footer a .icon {
           margin-bottom: 5%;
       }
     }
-
     
-    .login {
-        background-color: red;
-        padding: 2em;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(5, 28, 44, 0.1);
-        margin: 2em auto;
-        max-width: 400px;
-    }
-
-
-/* Star sign - Gold shimmer - https: //codepen.io/Amarjit/pen/mrbjNy */
-.fa-star-base {
-    color: #daa520;
-}
-
-.light-base {
-    display: inline-block;
-    background: linear-gradient(
-        135deg,
-        #daa520 0%,
-        #daa520 40%,
-        #ffffff 50%,
-        #daa520 60%,
-        #daa520 100%
-    );
-    background-size: 200%;
-    background-position: -200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: shimmer 1.5s infinite;
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -200%;
-    }
-    100% {
-        background-position: 200%;
-    }
-}
 
 /* Change the background of the collapsed navbar (mobile view) */
 @media (max-width: 991.98px) { /* Bootstrap breakpoint for medium screens and smaller */
@@ -903,10 +865,10 @@ footer a .icon {
 
 /* Optional: Style the hamburger icon */
 .navbar-toggler {
-    border-color: #ccc; /* Change the border color of the hamburger button */
+    border-color: #ffffff; /* Change the border color of the hamburger button */
 }
 
 .navbar-toggler .fas.fa-bars {
-    color: #333; /* Change the icon color */
+    color: #ffffff; /* Change the icon color */
 }
 

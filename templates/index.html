@@ -5,6 +5,7 @@
 <!-- Extra CSS -->
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+<link rel="stylesheet" href="{% static 'css/contact.css' %}" />
 {% endblock %}
 
 {% block title %}{% trans "Homepage" %}{% endblock %}
@@ -12,13 +13,10 @@
 {% block content %}
 <!-- Hero Section -->
 <section class="hero">
-    <video autoplay muted playsinline loop id="hero-video">
-        <source src="{% static 'videos/hero_video.mp4' %}" type="video/mp4">
-        {% trans "Your browser does not support HTML5 video." %}
-    </video>
+    <img src="{% static 'images/laptop.png' %}" alt="{% trans 'Hero Image' %}" class="img-fluid" id="hero-image">
     <div class="hero-content text-center text-white">
-        <h1 class="mb-2">{% trans "Residenza 126" %}</h1>
-        <p class="hero-text">{% trans "Eleganza e Tranquillità nel Cuore della Città" %}</p><span class="typewriter nocaret"></span>
+        <h1 class="mb-2">{% trans "Lilla Kavecsanszki" %}</h1>
+        <p class="hero-text">{% trans "Full Stack Web Developer" %}</p><span class="typewriter nocaret"></span>
     </div>
 </section>
 
@@ -96,7 +94,7 @@
 </section>
 
 <!-- Contact Us and Brochure Download Section -->
-<section id="contact-us" class="contact-us py-5" style="background-color: #e4e4e4;">
+<section id="contact" class="contact-us py-5" style="background-color: #e4e4e4;">
     <div class="container">
         <div class="row">
             <!-- Brochure Download (Left side) -->
@@ -114,11 +112,11 @@
             <!-- Contact Us Button (Right side) -->
             <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                 <div class="help-button rounded-0" style="width: 150px; height: 150px;">
-                    <a class="help-link d-flex h-100" href="{% url 'contact_us' %}">
+                    <a class="help-link d-flex h-100" href="{% url 'home' %}#contact-us">
                         <img src="{% static 'images/contact.png' %}" alt="Contact page" class="mb-1 img-fluid m-auto contact-icon">
                     </a>
                 </div>
-                <a href="{% url 'contact_us' %}" class="mt-2 text-center" style="color: #182d5f; text-decoration: none;">
+                <a href="{% url 'home' %}#contact-us" class="mt-2 text-center" style="color: #182d5f; text-decoration: none;">
                     <p>{% trans "Reach Out" %}</p>
                 </a>
             </div>
@@ -129,37 +127,7 @@
 <!-- Apartment Types Section -->
 <section id="apartment-types" class="apartment-types py-5">
     <div class="container">
-        <h2 class="mb-4 title mt-4" style="text-align: left;">{% trans "Our Apartment Types" %}</h2>
-
-        <!-- First Apartment Type -->
-        <div id="bilocali" class="row mb-4">
-            <!-- Text Section (First on small screens) -->
-            <div class="col-lg-6 col-12 d-flex flex-column justify-content-center order-1 order-lg-1">
-                <h3>{% trans "Two-room Apartments" %}</h3>
-                <p>
-                    {% trans "designed down to the smallest details to offer maximum comfort and make the most of all the spaces. combination of style and comfort with a private terrace of 20 square meters and an exclusive Jacuzzi, offering a personal oasis of relaxation. Designed with attention to detail, they are an excellent solution for those looking for a smart investment or an elegant urban refuge of serenity." %}
-                </p>
-            </div>
-            <!-- Image Section (Second on small screens) -->
-            <div class="col-lg-6 col-12 d-flex justify-content-center order-2 order-lg-2">
-                <img src="{% static 'images/table.jpeg' %}" alt="Apartment Type 1" class="img-fluid-apartment fade-slide-right">
-            </div>
-        </div>
-
-        <!-- Second Apartment Type -->
-        <div id="trilocali" class="row mb-4">
-            <!-- Text Section (First on small screens) -->
-            <div class="col-lg-6 col-12 d-flex flex-column justify-content-center order-1 order-lg-2">
-                <h3>{% trans "Three-room Apartments" %}</h3>
-                <p>
-                    {% trans "of different sizes and customizable according to your needs. A rare opportunity that combines elegance, comfort and practicality in a single housing solution. Fall in love with the large living room with integrated kitchen, the environment designed specifically to experience convivial and intimate moments, accompanied by the exposed silver fir wood roof that gives warmth and refinement to the interiors." %}
-                </p>
-            </div>
-            <!-- Image Section (Second on small screens) -->
-            <div class="col-lg-6 col-12 d-flex justify-content-center order-2 order-lg-1">
-                <img src="{% static 'images/jacuzzi.jpeg' %}" alt="Apartment Type 2" class="img-fluid-apartment fade-slide-left">
-            </div>
-        </div>
+        
     </div>
 </section>
 
@@ -219,26 +187,118 @@
 <!-- About Section -->
 <section id="about" class="company-story py-5">
     <div class="container">
-        <div class="row align-items-center">
-            <!-- Text Content -->
-            <div class="col-lg-7">
-                <h2 class="mb-4 title text-center">{% trans "How It All Started & How We Are Going" %}</h2>
-                <p class="lead mb-4">
-                    {% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor nec justo posuere dignissim. Aliquam erat volutpat. Nam at vestibulum magna. Integer fermentum urna ut lacus auctor, vel aliquam odio blandit." %}
-                </p>
-                <p>
-                    {% trans "Ut lacinia cursus tortor non egestas. Donec a felis at sapien sollicitudin aliquet. Sed tempus nisl vel tortor malesuada, ut faucibus mi efficitur. Nulla facilisi. Vestibulum viverra arcu et enim varius, eget dictum velit egestas." %}
-                </p>
-            </div>
-            <!-- Video Content -->
-            <div class="col-lg-5 text-center about-video">
-                <video class="company-video" autoplay muted playsinline loop>
-                    <source src="{% static 'videos/balconyenter.mp4' %}" type="video/mp4">
-                    {% trans "Your browser does not support the video tag." %}
-                </video>
-            </div>
-        </div>
+        
     </div>
 </section>
+
+<!-- Contact Section -->
+<section id="contact-us" class="company-story py-5">
+    <div class="container">
+        <section class="contact-container mirror-silver-background">
+            <h1 class="contact-h1">{% trans "Do you have a project in mind?" %}</h1>
+    
+        <!-- Display form errors -->
+        {% if form.errors %}
+            <div class="alert alert-danger">
+                <strong>{% trans "Please correct the errors below:" %}</strong>
+                <ul>
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    
+        <!-- Display success or error messages -->
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form method="post">
+                {% csrf_token %}
+                
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="{{ form.name.id_for_label }}">{% trans "Name" %}</label>
+                    {{ form.name }}
+                    <span class="text-danger">
+                        {% for error in form.name.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </span>
+                </div>
+            
+                <!-- Surname Field -->
+                <div class="form-group">
+                    <label for="{{ form.surname.id_for_label }}">{% trans "Surname" %}</label>
+                    {{ form.surname }}
+                    <span class="text-danger">
+                        {% for error in form.surname.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </span>
+                </div>
+            
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="{{ form.email.id_for_label }}">{% trans "Email" %}</label>
+                    {{ form.email }}
+                    <span class="text-danger">
+                        {% for error in form.email.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </span>
+                </div>
+            
+                <!-- Phone Number Field -->
+                <div class="form-group">
+                    <label for="{{ form.phone_number.id_for_label }}">{% trans "Phone Number" %}</label>
+                    {{ form.phone_number }}
+                    <span class="text-danger">
+                        {% for error in form.phone_number.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </span>
+                </div>
+            
+                <!-- Subject Field -->
+                <div class="form-group">
+                    <label for="{{ form.subject.id_for_label }}">{% trans "Subject" %}</label>
+                    {{ form.subject }}
+                    <span class="text-danger">
+                        {% for error in form.subject.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </span>
+                </div>
+            
+                <!-- Message Field -->
+                <div class="form-group">
+                    <label for="{{ form.message.id_for_label }}">{% trans "Message" %}</label>
+                    {{ form.message }}
+                    <span class="text-danger">
+                        {% for error in form.message.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </span>
+                </div>
+            
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">{% trans "Send" %}</button>
+            </form>
+            
+        </div>
+    </section>
 
 {% endblock %}

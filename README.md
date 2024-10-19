@@ -4,3 +4,6 @@ Color Palette:
 #5F4B2A - Cologne Earth Brown
 #3C401A - Olive Drab
 #171006 - Smoky Black
+
+favicon
+https://favicon.io/favicon-generator/

@@ -15,7 +15,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include('website.urls')),
     path('projects/', include('projects.urls')),
-    path('contact/', include('contact.urls')),
 ]
 
 # Add language switching URL pattern outside i18n_patterns
@@ -28,7 +27,6 @@ urlpatterns += [
 urlpatterns += i18n_patterns(
     path('', include('website.urls')),
     path('projects/', include('projects.urls')),
-    path('contact/', include('contact.urls')),
     prefix_default_language=True,
 )
 

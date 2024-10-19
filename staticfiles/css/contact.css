@@ -1,7 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: white;
-    color: #182d5f;
+    color: #171006;
 }
 
 /* Container for Contact Page */
@@ -10,42 +10,32 @@ body {
     margin-top: 12%;
 }
 
-.contact-container{
+.contact-container {
     padding: 2em;
     margin-bottom: 2em;
-    max-width: 1200px;    
-    color: #182d5f;
+    background-image: url("{% static 'images/tan-leather.jpg' %}"); /* Replace with the actual image path */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    max-width: 1200px;
+    color: #171006;
     border-radius: 3px;
 }
 
+
 h1 {
-    color: #182d5f;
+    color: #171006;
     font-family: "Italiana", sans-serif;
     font-weight: 700;
     margin-bottom: 1em;
     text-align: center;
 }
 
-.mirror-silver-background {
-background: linear-gradient(135deg, #e6e6e6, #cccccc, #d3d3d3, #a9a9a9, #bfbfbf);
-padding: 1em;
-box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
-background-size: 400% 400%; /* Enhance gradient movement */
-animation: shiny-effect 5s ease-in-out infinite;
-}
-
-/* Animation to create a moving shine effect */
-@keyframes shiny-effect {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 .contact-form label {
     display: block;
     font-size: 1.2em;
     margin-bottom: 0.5em;
-    color: #182d5f;
+    color: #171006;
 }
 
 .contact-form input, 
@@ -53,7 +43,7 @@ animation: shiny-effect 5s ease-in-out infinite;
     width: 100%;
     padding: 0.8em;
     margin-bottom: 1em;
-    border: 1px solid #182d5f;
+    border: 1px solid #171006;
     border-radius: 4px;
     font-size: 1.1em;
     font-weight: bold;
@@ -124,23 +114,6 @@ animation: shiny-effect 5s ease-in-out infinite;
     font-size: 1.1em;
 }
 
-/* Map Container */
-.map-container {
-    flex: 1;
-    width: 100%; /* Ensures the map container takes full width of its parent */
-    height: 400px; /* Set a fixed height for the container */
-    border-radius: 4px; /* Slightly round the corners of the container */
-    overflow: hidden; /* Ensures anything that overflows is hidden */
-    border: solid 1px #a9a9a9; 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow for the container */
-}
-
-.map-container iframe {
-    width: 100%; /* Full width of the container */
-    height: 100%; /* Full height of the container */
-    border-radius: 0; /* Match the parent's border radius */
-    border: solid 1px #a9a9a9;
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
